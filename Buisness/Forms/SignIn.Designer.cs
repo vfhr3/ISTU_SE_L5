@@ -101,7 +101,6 @@ namespace Buisness.Forms
             this.button3.TabIndex = 2;
             this.button3.Text = "Помощь";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label1
             // 
@@ -112,7 +111,6 @@ namespace Buisness.Forms
             this.label1.Size = new System.Drawing.Size(94, 31);
             this.label1.TabIndex = 6;
             this.label1.Text = "Войти";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel1
             // 
@@ -139,7 +137,6 @@ namespace Buisness.Forms
             this.Controls.Add(this.panel1);
             this.Name = "SignIn";
             this.Text = "Sign In";
-            this.Load += new System.EventHandler(this.SignIn_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

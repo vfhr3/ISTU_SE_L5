@@ -4,20 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Buisness.Models
-{
-    public enum Role
-    {
-        User,
-        Admin
-    }
+namespace Buisness.Models {
 
     public class User
     {
-        public readonly int Id;
+        public int Id;
         public string Name;
         public string Username;
         public string Password;
-        public Role Role;
+        public string Role;
     }
 }

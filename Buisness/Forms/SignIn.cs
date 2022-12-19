@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Buisness.Models;
+using Buisness.Utility;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,39 +19,13 @@ namespace Buisness.Forms
             InitializeComponent();
         }
 
-        private void SignIn_Load(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Login(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
+            string username = textBox1.Text;
+            string password = textBox2.Text;
+            User user = Database.GetUser(username, password);
+            if (user != null)
+            MessageBox.Show($"{user.Id}\n{user.Name}\n{user.Username}\n{user.Password}\n{user.Role}");
         }
     }
 }
