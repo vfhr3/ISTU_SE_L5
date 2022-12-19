@@ -17,14 +17,22 @@ namespace Buisness.Forms
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void openSignInForm(object sender, EventArgs e)
         {
+            if (Application.OpenForms.OfType<SignIn>().Count() == 1)
+                Application.OpenForms.OfType<SignIn>().First().Close();
 
+            SignIn signIn = new SignIn();
+            signIn.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void openSignUpForm(object sender, EventArgs e)
         {
+            if (Application.OpenForms.OfType<SignUp>().Count() == 1)
+                Application.OpenForms.OfType<SignUp>().First().Close();
 
+            SignUp signUpForm = new SignUp();
+            signUpForm.Show();
         }
     }
 }

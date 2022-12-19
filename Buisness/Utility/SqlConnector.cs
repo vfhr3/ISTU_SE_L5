@@ -3,12 +3,12 @@ using System.Windows.Forms;
 
 namespace Buisness.Utility
 {
-    public class SqlConnector
+    public class Database
     {
         MySqlConnection connection;
         MySqlCommand commandDatabase;
 
-        public SqlConnector(string connectionString)
+        public Database(string connectionString)
         {
             try
             {
