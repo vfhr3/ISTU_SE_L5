@@ -104,9 +104,10 @@ namespace Buisness.Forms
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(368, 23);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(321, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 13);
+            this.label1.Size = new System.Drawing.Size(148, 31);
             this.label1.TabIndex = 6;
             this.label1.Text = "Войти как";
             this.label1.Click += new System.EventHandler(this.label1_Click);
