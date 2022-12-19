@@ -3,16 +3,15 @@ using System.Windows.Forms;
 
 namespace Buisness.Utility
 {
-    public class SqlConnector
+    public static class Database
     {
-        MySqlConnection connection;
-        MySqlCommand commandDatabase;
+        static MySqlConnection connection = new MySqlConnection("server=127.0.0.1;uid=root;pwd=;database=lab_db");
+        static MySqlCommand commandDatabase;
 
-        public SqlConnector(string connectionString)
+        public static void Open()
         {
             try
             {
-                connection = new MySqlConnection(connectionString);
                 connection.Open();
             }
             catch (MySqlException ex)
@@ -21,7 +20,19 @@ namespace Buisness.Utility
             }
         }
 
-        public void HealthCheck()
+        public static void Close()
+        {
+            try
+            {
+                connection.Close();
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public static void HealthCheck()
         {
             MessageBox.Show(connection.State.ToString());
         }
