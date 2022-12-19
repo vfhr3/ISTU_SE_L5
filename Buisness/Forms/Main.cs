@@ -10,14 +10,19 @@ using System.Windows.Forms;
 
 namespace Buisness.Forms
 {
-    public partial class SignUp : Form
+    public partial class Main : Form
     {
-        public SignUp()
+        public Main()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
         {
 
         }

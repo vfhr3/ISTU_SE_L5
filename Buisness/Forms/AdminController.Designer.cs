@@ -30,8 +30,8 @@ namespace Buisness.Forms
         private void InitializeComponent()
         {
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -42,14 +42,6 @@ namespace Buisness.Forms
             this.flowLayoutPanel1.Size = new System.Drawing.Size(605, 337);
             this.flowLayoutPanel1.TabIndex = 0;
             this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(12, 57);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(118, 337);
-            this.flowLayoutPanel2.TabIndex = 1;
             // 
             // label1
             // 
@@ -62,6 +54,14 @@ namespace Buisness.Forms
             this.label1.Text = "Сотрудники";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(12, 57);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(118, 337);
+            this.flowLayoutPanel2.TabIndex = 1;
             // 
             // AdminController
             // 
@@ -82,7 +82,7 @@ namespace Buisness.Forms
         #endregion
 
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
     }
 }

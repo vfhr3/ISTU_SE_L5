@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Buisness.Forms
 {
-    public partial class SignUp : Form
+    public partial class EmployeeController : Form
     {
-        public SignUp()
+        public EmployeeController()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
