@@ -39,7 +39,10 @@ namespace Buisness.Forms
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+<<<<<<< HEAD
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+=======
+>>>>>>> 03d3d5f862f96941bd90c0caed4400509c3896de
             this.SuspendLayout();
             // 
             // label3
@@ -124,6 +127,7 @@ namespace Buisness.Forms
             this.flowLayoutPanel2.BackColor = System.Drawing.SystemColors.ControlDark;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(12, 57);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+<<<<<<< HEAD
             this.flowLayoutPanel2.Size = new System.Drawing.Size(118, 322);
             this.flowLayoutPanel2.TabIndex = 1;
             // 
@@ -132,6 +136,11 @@ namespace Buisness.Forms
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
+=======
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(118, 337);
+            this.flowLayoutPanel2.TabIndex = 1;
+            // 
+>>>>>>> 03d3d5f862f96941bd90c0caed4400509c3896de
             // AdminController
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -165,6 +174,9 @@ namespace Buisness.Forms
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+<<<<<<< HEAD
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+=======
+>>>>>>> 03d3d5f862f96941bd90c0caed4400509c3896de
     }
 }
