@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,12 +19,5 @@ namespace Buisness.Models
         public string Username;
         public string Password;
         public Role Role;
-
-
-
-        public void RequestSupport()
-        {
-            Console.WriteLine("Ожидайте звонка.");
-        }
     }
 }
