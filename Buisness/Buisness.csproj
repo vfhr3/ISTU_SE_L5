@@ -56,17 +56,29 @@
     <Compile Include="Forms\AdminController.Designer.cs">
       <DependentUpon>AdminController.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Certificate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Certificate.Designer.cs">
+      <DependentUpon>Certificate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Employee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Employee.Designer.cs">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\SignIn.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\SignIn.Designer.cs">
       <DependentUpon>SignIn.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\EmployeeList.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\EmployeeList.Designer.cs">
-      <DependentUpon>EmployeeList.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\User.cs" />
     <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
@@ -82,11 +94,17 @@
     <EmbeddedResource Include="Forms\AdminController.resx">
       <DependentUpon>AdminController.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\EmployeeList.resx">
-      <DependentUpon>EmployeeList.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Certificate.resx">
+      <DependentUpon>Certificate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Employee.resx">
+      <DependentUpon>Employee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SignIn.resx">
       <DependentUpon>SignIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
