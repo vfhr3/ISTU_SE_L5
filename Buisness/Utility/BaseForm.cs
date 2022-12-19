@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace Buisness.Utility
 {
-    class BaseForm : Form
+    abstract class BaseForm : Form
     {
         public User User;
     }
