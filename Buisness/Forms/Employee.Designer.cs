@@ -1,7 +1,7 @@
 ﻿
 namespace Buisness.Forms
 {
-    partial class EmployeeList
+    partial class Employee
     {
         /// <summary> 
         /// Обязательная переменная конструктора.

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Buisness.Forms
 {
-    public partial class EmployeeList : UserControl
+    public partial class Employee : UserControl
     {
-        public EmployeeList()
+        public Employee()
         {
             InitializeComponent();
         }
