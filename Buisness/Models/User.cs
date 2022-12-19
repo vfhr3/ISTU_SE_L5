@@ -14,6 +14,10 @@ namespace Buisness.Models
 
     public class User
     {
-
+        public readonly int Id;
+        public string Name;
+        public string Username;
+        public string Password;
+        public Role Role;
     }
 }

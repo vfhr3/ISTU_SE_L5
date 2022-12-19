@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Buisness.Forms;
+using System;
 using System.Windows.Forms;
 
 namespace Buisness
@@ -10,7 +11,7 @@ namespace Buisness
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run();
+            Application.Run(new Form1());
         }
     }
 }
