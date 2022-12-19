@@ -14,7 +14,6 @@ namespace Buisness.Utility
             {
                 connection = new MySqlConnection(connectionString);
                 connection.Open();
-
             }
             catch (MySqlException ex)
             {
