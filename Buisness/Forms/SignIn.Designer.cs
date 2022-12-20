@@ -92,6 +92,7 @@ namespace Buisness.Forms
             this.button4.TabIndex = 3;
             this.button4.Text = "Выход";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -137,6 +138,7 @@ namespace Buisness.Forms
             this.Controls.Add(this.panel1);
             this.Name = "SignIn";
             this.Text = "Sign In";
+            this.Load += new System.EventHandler(this.SignIn_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

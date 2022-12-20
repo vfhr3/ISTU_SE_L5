@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Buisness.Models;
+using Buisness.Utility;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,44 +14,24 @@ namespace Buisness.Forms
 {
     public partial class AdminController : Form
     {
-        public AdminController()
+        User user;
+        public AdminController(User user)
         {
             InitializeComponent();
+            this.user = user;
+
+            List<User> users = Database.GetUsers();
+            foreach (var _user in users)
+            {
+                Employee employee = new Employee(_user, CertsPanel);
+                EmployeePanel.Controls.Add(employee);
+            }
         }
 
-        private void AdminController_Load(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
+            this.Close();
+            Program.mainForm.Show();
         }
     }
 }

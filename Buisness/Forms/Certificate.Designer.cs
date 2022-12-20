@@ -30,34 +30,35 @@ namespace Buisness.Forms
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.OptionRole = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.LabelName = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.OptionRole);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.LabelName);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(828, 93);
+            this.panel1.Size = new System.Drawing.Size(747, 52);
             this.panel1.TabIndex = 0;
             // 
-            // label1
+            // OptionRole
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(68, 41);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "CertificateNameId";
+            this.OptionRole.Location = new System.Drawing.Point(578, 8);
+            this.OptionRole.Name = "OptionRole";
+            this.OptionRole.Size = new System.Drawing.Size(157, 39);
+            this.OptionRole.TabIndex = 2;
+            this.OptionRole.Text = "Одобрить";
+            this.OptionRole.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(461, 28);
+            this.button1.Location = new System.Drawing.Point(415, 8);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(157, 39);
             this.button1.TabIndex = 1;
@@ -65,14 +66,14 @@ namespace Buisness.Forms
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // LabelName
             // 
-            this.button2.Location = new System.Drawing.Point(624, 28);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(157, 39);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Одобрить";
-            this.button2.UseVisualStyleBackColor = true;
+            this.LabelName.AutoSize = true;
+            this.LabelName.Location = new System.Drawing.Point(34, 21);
+            this.LabelName.Name = "LabelName";
+            this.LabelName.Size = new System.Drawing.Size(91, 13);
+            this.LabelName.TabIndex = 0;
+            this.LabelName.Text = "CertificateNameId";
             // 
             // Certificate
             // 
@@ -80,7 +81,7 @@ namespace Buisness.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
             this.Name = "Certificate";
-            this.Size = new System.Drawing.Size(793, 93);
+            this.Size = new System.Drawing.Size(747, 52);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -90,8 +91,8 @@ namespace Buisness.Forms
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label LabelName;
+        public System.Windows.Forms.Button OptionRole;
     }
 }

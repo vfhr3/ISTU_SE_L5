@@ -25,7 +25,32 @@ namespace Buisness.Forms
             string password = textBox2.Text;
             User user = Database.GetUser(username, password);
             if (user != null)
-            MessageBox.Show($"{user.Id}\n{user.Name}\n{user.Username}\n{user.Password}\n{user.Role}");
+            {
+                if (user.Role == "User")
+                {
+                    EmployeeController employeeform = new EmployeeController(user);
+                    employeeform.EmployeeName.Text = user.Name;
+                    employeeform.Show();
+                    this.Close();
+                }
+                else if (user.Role == "Admin")
+                {
+                    AdminController adminForm = new AdminController(user);
+                    adminForm.Show();
+                    this.Close();
+                }
+            }
+        }
+
+        private void SignIn_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Program.mainForm.Show();
         }
     }
 }

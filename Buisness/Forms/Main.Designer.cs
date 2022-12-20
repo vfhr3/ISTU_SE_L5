@@ -61,7 +61,7 @@
             // 
             // signupButton
             // 
-            this.signupButton.Location = new System.Drawing.Point(300, 155);
+            this.signupButton.Location = new System.Drawing.Point(300, 177);
             this.signupButton.Name = "signupButton";
             this.signupButton.Size = new System.Drawing.Size(198, 33);
             this.signupButton.TabIndex = 7;
@@ -87,6 +87,7 @@
             this.button4.TabIndex = 5;
             this.button4.Text = "Выход";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 

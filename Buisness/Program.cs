@@ -4,14 +4,16 @@ using System.Windows.Forms;
 
 namespace Buisness
 {
-    internal static class Program
+    public static class Program
     {
+        public static Main mainForm;
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Main());
+            mainForm = new Main();
+            Application.Run(mainForm);
         }
     }
 }

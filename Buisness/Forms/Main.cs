@@ -24,6 +24,7 @@ namespace Buisness.Forms
 
             SignIn signIn = new SignIn();
             signIn.Show();
+            this.Hide();
         }
 
         private void openSignUpForm(object sender, EventArgs e)
@@ -33,6 +34,12 @@ namespace Buisness.Forms
 
             SignUp signUpForm = new SignUp();
             signUpForm.Show();
+            this.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
