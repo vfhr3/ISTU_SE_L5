@@ -94,7 +94,9 @@
             this.Controls.Add(this.EmployeeName);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.CertificatesList);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "EmployeeController";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EmployeeController";
             this.Load += new System.EventHandler(this.EmployeeController_Load);
             this.ResumeLayout(false);

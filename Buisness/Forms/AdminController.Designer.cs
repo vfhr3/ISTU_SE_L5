@@ -127,6 +127,7 @@ namespace Buisness.Forms
             this.Controls.Add(this.CertsPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "AdminController";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminController";
             this.ResumeLayout(false);
             this.PerformLayout();
