@@ -21,10 +21,10 @@ namespace Buisness.Forms
             this.user = user;
             List<Models.Certificate> certificates= new List<Models.Certificate>();
             certificates = Database.GetUserCertificates(user);
-            for (int i = 0; i < certificates.Count; i++)
+            foreach (var _certificate in certificates)
             {
-                Certificate certificate = new Certificate();
-                certificate.LabelName.Text = $"Сертификат #{certificates[i].id}";
+                Certificate certificate = new Certificate(_certificate);
+                certificate.LabelName.Text = $"Сертификат #{_certificate.id}";
                 certificate.OptionRole.Text = "Редактировать";
                 CertificatesList.Controls.Add(certificate);
             }

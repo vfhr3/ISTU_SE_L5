@@ -29,11 +29,11 @@ namespace Buisness.Forms
 
         private void openSignUpForm(object sender, EventArgs e)
         {
-            if (Application.OpenForms.OfType<SignUp>().Count() == 1)
-                Application.OpenForms.OfType<SignUp>().First().Close();
+            if (Application.OpenForms.OfType<Registration>().Count() == 1)
+                Application.OpenForms.OfType<Registration>().First().Close();
 
-            SignUp signUpForm = new SignUp();
-            signUpForm.Show();
+            Registration registrationForm = new Registration();
+            registrationForm.Show();
             this.Hide();
         }
 

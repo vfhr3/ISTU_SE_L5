@@ -1,4 +1,5 @@
 ﻿using Buisness.Models;
+using Buisness.Utility;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -27,10 +28,10 @@ namespace Buisness.Forms
         private void button1_Click(object sender, EventArgs e)
         {
             Certs.Controls.Clear();
-            List<Models.Certificate> certificates = Utility.Database.GetUserCertificates(user);
+            List<Models.Certificate> certificates = Database.GetUserCertificates(user);
             foreach (Models.Certificate certificate in certificates)
             {
-                Certificate certificateElement = new Certificate();
+                Certificate certificateElement = new Certificate(certificate);
                 certificateElement.LabelName.Text = $"Сертификат #{certificate.id}";
                 Certs.Controls.Add(certificateElement);
             }

@@ -38,7 +38,7 @@ namespace Buisness.Forms
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.OptionRole);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.LabelName);
@@ -55,6 +55,7 @@ namespace Buisness.Forms
             this.OptionRole.TabIndex = 2;
             this.OptionRole.Text = "Одобрить";
             this.OptionRole.UseVisualStyleBackColor = true;
+            this.OptionRole.Click += new System.EventHandler(this.OptionRole_Click);
             // 
             // button1
             // 

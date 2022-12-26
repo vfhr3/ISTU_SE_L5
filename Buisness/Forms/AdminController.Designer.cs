@@ -83,7 +83,7 @@ namespace Buisness.Forms
             // 
             // CertsPanel
             // 
-            this.CertsPanel.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.CertsPanel.BackColor = System.Drawing.Color.Gainsboro;
             this.CertsPanel.Location = new System.Drawing.Point(158, 57);
             this.CertsPanel.Name = "CertsPanel";
             this.CertsPanel.Size = new System.Drawing.Size(755, 337);
@@ -102,7 +102,7 @@ namespace Buisness.Forms
             // 
             // EmployeePanel
             // 
-            this.EmployeePanel.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.EmployeePanel.BackColor = System.Drawing.Color.Gainsboro;
             this.EmployeePanel.Location = new System.Drawing.Point(12, 57);
             this.EmployeePanel.Name = "EmployeePanel";
             this.EmployeePanel.Size = new System.Drawing.Size(140, 337);
@@ -117,6 +117,7 @@ namespace Buisness.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(935, 450);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);

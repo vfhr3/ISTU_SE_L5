@@ -40,6 +40,10 @@ namespace Buisness.Forms
                     this.Close();
                 }
             }
+            else
+            {
+                MessageBox.Show("Пользователь не найден");
+            }
         }
 
         private void SignIn_Load(object sender, EventArgs e)
