@@ -137,8 +137,8 @@ namespace Buisness.Utility
                         while (reader.Read())
                         {
                             Certificate cert = new Certificate();
-                            cert.owner_id = reader.GetInt32(0);
-                            cert.id = reader.GetInt32(1);
+                            cert.id = reader.GetInt32(0);
+                            cert.owner_id = reader.GetInt32(1);
                             cert.data = reader.GetString(2);
                             cert.isApproved = reader.GetBoolean(3);
                             certs.Add(cert);
@@ -153,9 +153,9 @@ namespace Buisness.Utility
                 }
             }
         }
-        public static void HealthCheck()
+        public static string HealthCheck()
         {
-            MessageBox.Show(connection.State.ToString());
+            return connection.State.ToString();
         }
         public static Certificate GetCertificateById(int id)
         {
@@ -252,6 +252,33 @@ namespace Buisness.Utility
                         MessageBox.Show(e.Message);
                         return null;
                     }
+                }
+            }
+        }
+        public static void DeleteUserById(int id)
+        {
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+
+                string deleteSql = "DELETE FROM user WHERE id = @id";
+
+                using (MySqlCommand cmd = new MySqlCommand(deleteSql, conn))
+                {
+                    cmd.Parameters.AddWithValue("@id", id);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
+        public static void AddCertificate(int userId)
+        {
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "INSERT INTO certificate";
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                {
+
                 }
             }
         }

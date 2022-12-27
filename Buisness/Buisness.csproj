@@ -171,6 +171,7 @@
   <ItemGroup>
     <Content Include="Assets\Administrator.jpg" />
     <Content Include="Assets\Employee.jpg" />
+    <Content Include="dll\MySql.Data.dll" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
